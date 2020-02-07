@@ -43,3 +43,31 @@ header, main, footer {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.header-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-bottom-background {
+    width: 100%;
+    max-width: 1700px;
+    height: 60vh;
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url(../images/Background.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+.header-bottom-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
