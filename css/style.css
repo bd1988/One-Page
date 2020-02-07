@@ -52,7 +52,8 @@ header, main, footer {
 
 .header-bottom-background {
     width: 100%;
-    max-width: 1700px;
+    max-width: 1735px;
+    max-height: 519px;
     height: 60vh;
     padding-top: 130px;
     display: flex;
@@ -70,4 +71,28 @@ header, main, footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.main-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-intro-container {   
+    max-width: 1352px;
+    width: 100%;
+}
+
+.main-intro-container-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.main-intro-container-bottom {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
 }
