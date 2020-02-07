@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --base-font: 'Raleway', sans-serif;
+    --secondar-font: 'Open Sans', sans-serif;
+    --my-blue: #08A6E4;
+    --my-red: #FB3B64;
+    --my-green: #55DFB4;
+    --black: #000000;
+    --dark-grey: #95989A;
+    --medium-grey: #A5A5A5;
+    --white: #FFFFFF;
+}
