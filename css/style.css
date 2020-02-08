@@ -28,6 +28,13 @@ header, main, footer {
 
 }
 
+h1 {
+    font-family: var(--base-font);
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: 400;
+}
+
 .header-top-nav {
     height: 100%;
     display: flex;
@@ -42,7 +49,8 @@ header, main, footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;    
-    margin-bottom: 130px;
+    margin-bottom: 8.125rem;
+    box-shadow: 0px 3px 6px #00000029;
 }
 
 .header-top-logo a {
@@ -126,9 +134,8 @@ header, main, footer {
 
 .header-bottom-background {
     width: 100%;
-    max-width: 1735px;
-    max-height: 519px;
-    height: 60vh;
+    height: 41rem;
+    max-width: 108rem;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -144,6 +151,33 @@ header, main, footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.header-bottom-container p {
+    font-family: var(--base-font);
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.header-bottom-container button {
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+    width: 27.5rem;
+    height: 4.125rem;
+    box-shadow: 5px 10px 14px rgba(7, 171, 230, 0.212);
+    background-color: var(--my-blue);
+    border-radius: 50px;
+    border: 0px;
+}
+
+.header-bottom-container button:hover {
+    box-shadow: 5px 10px 14px rgba(7, 171, 230, 0.336);
+    cursor: pointer;
 }
 
 .main-intro {
