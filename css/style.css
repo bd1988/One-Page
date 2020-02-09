@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,6 +13,7 @@
     --black: #000000;
     --dark-grey: #95989A;
     --medium-grey: #A5A5A5;
+    --light-grey: #F7F7F7;
     --white: #FFFFFF;
 }
 
@@ -25,12 +27,18 @@ header, main, footer {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 h1 {
     font-family: var(--base-font);
     font-size: 3rem;
+    color: var(--black);
+    font-weight: 400;
+}
+
+h2 {
+    font-family: var(--base-font);
+    font-size: 2.125rem;
     color: var(--black);
     font-weight: 400;
 }
@@ -246,22 +254,39 @@ h3 {
     cursor: pointer;
 }
 
-.main-intro {
+.main-intro, .main-description, .main-pricing, .main-questions {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    width: 100%;
+}
+
+.main-description {
+    background-color: var(--light-grey);
+}
+
+.main-description p {
+    font-family: var(--secondary-font);
+    color: var(--black);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    padding-top: 2rem;
 }
 
 .main-intro-container {   
     max-width: 84.5rem;
     width: 100%;
+    
 }
 
 .main-intro-container-top {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
     text-align: center;
 }
 
@@ -269,7 +294,7 @@ h3 {
     display: flex;
     justify-content: space-around;
     padding-top: 100px;
-    }
+}
 
 .main-intro-container-bottom-left, .main-intro-container-bottom-middle, .main-intro-container-bottom-right {
     display: flex;
@@ -285,12 +310,6 @@ h3 {
     left: 2rem;
 }
 
-.main-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 .main-description-1st-row, .main-description-2nd-row,  .main-description-3rd-row {
     display: flex;
     flex-direction: row;
@@ -300,16 +319,64 @@ h3 {
 .main-description-1st-row-container {
     max-width: 84.5rem;
     width: 100%;
-    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 5px;
+    border: 1px solid #E8E9ED;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+}
+
+.macbook {
+    height: 13rem;
+    width: 23rem;        
+}
+
+.macbook-container {
+    position: relative;
+    z-index: 1;
+}
+
+.macbook-container::before {
+    content: "";
+    width: 11rem;
+    height: 11rem;
+    border-radius: 41px;
+    background-color: var(--my-red);
+    display: block;
+    z-index: -1;
+    position: absolute;
+    transform: rotate(45deg);
+    right: -1.5rem;
+    top: -5rem;
+    
+}
+
+.main-description-1st-row-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.main-description-1st-row-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 20rem;
+
 }
 
 .main-description-2nd-row-container {
     max-width: 84.5rem;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -318,17 +385,11 @@ h3 {
 .main-description-3rd-row-container {
     max-width: 84.5rem;
     width: 100%;
-    margin-top: 32px;
+    margin-top: 2.5rem;
     margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.main-pricing {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .main-pricing-container {
@@ -344,12 +405,6 @@ h3 {
 }
 
 .main-pricing-container-botttom {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.main-questions {    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -373,4 +428,18 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.main-description-1st-row p {
+    position: relative;
+}
+
+.main-description-1st-row p::after {
+    content: "";
+    width: 70%;
+    height: 0.2rem;
+    display: block;
+    background-color: var(--my-red);
+    bottom: -3rem;
+    position: absolute;
 }
