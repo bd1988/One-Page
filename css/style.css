@@ -473,6 +473,8 @@ p {
 }
 
 .main-questions-container {
+    max-width: 84.5rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -482,6 +484,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .footer-container {
@@ -737,6 +740,15 @@ p {
     align-items: flex-start;
 }
 
+.main-questions-container-right {
+    max-width: 440px;
+    margin-left: 3.5rem;
+}
+
+.main-questions-container-left {
+    margin-right: 3.5rem;
+}
+
 .main-questions-container-left-bottom p {
     font-family: var(--secondary-font);
     font-size: 1rem;
@@ -774,3 +786,68 @@ p {
 .footer-container-right img {
     padding-left: 1.25rem;
 }
+
+label:nth-of-type(1), label:nth-of-type(2) {
+     font-family: var(--secondary-font);
+     font-size: 0.7rem;
+     font-weight: 700;
+     color: var(--my-blue);
+     display: block;    
+}
+
+input:nth-of-type(1), input:nth-of-type(2) {
+    display: block;
+    height: 2.6875rem;
+    width: 100%;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0.125rem solid var(--my-blue);
+    margin-bottom: 2rem;
+}
+
+label:nth-of-type(3) {
+    font-family: var(--secondary-font);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--dark-grey);
+    text-align: justify;
+}
+
+.send {
+    width: 14rem;
+    height: 3.5rem;
+    border: 0;
+    border-radius: 2.1875rem;
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 0.75rem;
+    box-shadow: 5px 10px 14px #07ACE629;
+    background: #08A6E4 0% 0% no-repeat padding-box;
+    cursor: pointer;
+    margin-top: 1.125rem;
+    float: right;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;  
+    float: left;
+    margin-right: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #95989A;
+  }
+
+  
+  
+  input[type="checkbox"]:checked {
+    background-image: url("../images/Checkmark.svg");
+    background-size: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
