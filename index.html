@@ -105,6 +105,40 @@
                     </div>
                 </div>
             </section>
+            <section class="main-pricing-calculator">
+                <div class="main-pricing-calculator-container">
+                    <div class="main-pricing-calculator-container-top"><h3>Calculate how much you'll pay</h3></div>
+                    <div class="main-pricing-calculator-container-bottom">
+                        <div class="main-pricing-calculator-container-bottom-left">
+                           <form id="calc">
+                               <input type="number" id="products" placeholder="Products quantity">
+                               <input type="number" id="orders" placeholder="Estimated orders in month">
+                               <div class="select">Choose plan<div class="arrow rotation"></div></div>                                 
+                                 
+                               <div class="selection hidden"></div>                                             
+                               <div class="dropdown hidden">
+                                <div class="select1">Basic</div>
+                                <div class="select2">Professional</div>
+                                <div class="select3">Premium</div>
+                               </div>                               
+                               <input type="checkbox" id="accounting" value="35" name="accounting">
+                               <label for="accounting">Accounting</label>
+                               <input type="checkbox" id="terminal" value="5">
+                               <label for="terminal">Rent of a payment terminal</label>
+                               <div class="alert hidden"></div>
+                           </form>
+                        </div>
+                        <div class="main-pricing-calculator-container-bottom-right">
+                            <div class="products sumBox hidden"><p>Products</p><p class="productsDes"></p><p class="subtotal productsSum"></p></div>
+                            <div class="orders sumBox hidden"><p>Orders</p><p class="ordersDes"></p><p class="subtotal ordersSum"></p></div>
+                            <div class="plan sumBox hidden"><p>Package</p><p class="packageDes"></p><p class="subtotal planSum"></p></div>
+                            <div class="accounting sumBox hidden"><p>Accounting</p><p class="subtotal accountingSum"></p></div>
+                            <div class="rent sumBox hidden"><p>Terminal</p><p class="subtotal rentSum"></p></div>
+                            <div class="total totalBox hidden"><p>Total</p><p class="total totalSum"></p></div>
+                        </div>
+                    </div>                   
+                </div>
+            </section>
             <section class="main-questions">
                 <div class="main-questions-container">
                     <div class="main-questions-container-left">
@@ -126,13 +160,14 @@
                     </div>
                 </div>
             </section>
-        </main>
+          </main>
         <footer>
             <div class="footer-container">
                 <div class="footer-container-left"><a href="#">BestShop</a><p>&copy; 2020 Best Shop LTD, All rights reserved</p></div>
                 <div class="footer-container-right"><a href="#"><img src="images/Facebook.svg"></a><a href="#"><img src="images/Twitter.svg"></a></div>
             </div>
         </footer>
+        <script src="js/app.js"></script>
     </body>
 </html>
 
